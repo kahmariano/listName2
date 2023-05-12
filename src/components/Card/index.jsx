@@ -1,8 +1,8 @@
-export function Card () {
+export function Card (name, time ) {
     return(
         <div className="card">
-            <strong></strong>
-            <small></small>
+            <strong>{name}</strong>
+            <small>{time}</small>
         </div>
 
     )
