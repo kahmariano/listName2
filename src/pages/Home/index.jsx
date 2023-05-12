@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from "react"
-import './styles'
+import  { useState, useEffect } from "react"
 import { Card } from '../../components/Card'
 //Hooks(gancho) sao recursos que nos permite gerenciar o ciclo de vida do componente, sem precisar usar classes(hj usamos function) . useState e useEffect
 
-
+import './styles.css'
 function App() {
   const [studentName, setStudentName] = useState('')
-  const [students, setStudents] = useState([{ } ]) //um array que dentro dele tem um objeto [{}]
+  const [students, setStudents] = useState([]) 
   const [user, setUser] = useState({ name: '', avatar: '' })
   //essa parte das variaveis tem a variavel e a setVariavel, pq quando vamos mudar algo em vez de mudar diretamente a variavel original, mudamos uma "copia" na qual vamos tem a original e a que foi alterada(imutabilidade, acho que é isso)
+
 
   function handleAddStudent() {
     //function de adicionar novo aluno, tenho uma variavel de NovoAluno que recebe um objeto onde o name é a variavel que criei em cima, e o time a hora de criaçao.finalizo a function atualizando o valor da SetStudent, onde ele vai ter o valor anterior e mais o novo valor  

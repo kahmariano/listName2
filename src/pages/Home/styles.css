@@ -1,0 +1,55 @@
+.container {
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    /* esse vai pega o container inteiro, display flex abre a porta pra estilzar de uma forma especifica, e os seus filhos herdam propriedades espeficicas  */
+}
+.container header {
+    width: 50%;
+    margin: 84px 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* aqui vai pegar so no header,  achei que o flex de cima ja valia pra esse, mas n, n entendi isso. width com a % aqui leva em conta o elemento pai, que n especifiquei nada */
+}
+.container img {
+    width: 60px;
+    height: 60px;
+    border-radius:30px;
+    margin-left: 7px;
+    /* aqui vai estilizar a img nao especiifiquei dentro de onde ela ta pq so tem essa img */
+}
+.container  div {
+    display: flex;
+    align-items: center;
+}
+.container input {
+    width: 50%;
+    padding: 24px;
+    /* widith tem metade do elemento pai no caso o .container que é a div que ta envolvendo tudo*/
+
+    background-color: #e6e6e6;
+    border-radius: 5px;
+    border: none;
+
+    font-size: 16px;
+}
+
+.container button {
+    width: 50%;
+    padding: 24px;
+    font-weight: 700;
+
+    background-color: #ea4c89;
+    color: #ffffff;
+
+    border-radius:5px ;
+    margin: 12px 0 84px;
+    border:none;
+
+    cursor: pointer;
+    transition: filter 2s;
+/* cursor muda a aparencia dentro do botao, o transition n sei se ta pegando n vi diferença  */
+    font-size: 16px;
+
+}
